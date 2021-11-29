@@ -2,7 +2,7 @@
   "name": "@web3-ui/root",
   "license": "MIT",
   "version": "0.0.0",
-  "private": "true",
+  "private": "false",
   "engines": {
     "node": ">=16.0.0",
     "yarn": "^1.5"
@@ -15,8 +15,12 @@
     "prepare": "husky install",
     "pre-commit-hook": "yarn lint-staged",
     "format": "prettier --write",
-    "build": "yarn workspace @web3-ui/components build",
-    "test": "yarn workspace @web3-ui/components test"
+    "build:components": "yarn workspace @web3-ui/components build",
+    "build:hooks": "yarn workspace @web3-ui/hooks build",
+    "build": "yarn build:components && yarn build:hooks",
+    "test": "yarn workspace @web3-ui/components test",
+    "dev:components": "yarn workspace @web3-ui/components dev",
+    "dev:hooks": "yarn workspace @web3-ui/hooks dev"
   },
   "lint-staged": {
     "*.{ts,tsx,json,js,jsx}": "yarn format"

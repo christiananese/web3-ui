@@ -7,7 +7,7 @@
     "node": ">=16.0.0",
     "yarn": "^1.5"
   },
-  "description": "React components for web3, built with Chakra-UI",
+  "description": "React UI components for web3",
   "author": "Developer DAO",
   "homepage": "https://github.com/Developer-DAO/web3-ui/",
   "bugs": {
@@ -57,7 +57,7 @@
     "@types/node": "^16.11.9",
     "@types/react": "^17.0.36",
     "@types/react-dom": "^16.9.10",
-    "@web3-ui/hooks": "^0.0.1",
+    "@web3-ui/hooks": "^0.1.0",
     "babel-loader": "^8.2.1",
     "classnames": "^2.2.6",
     "husky": "^7.0.0",
